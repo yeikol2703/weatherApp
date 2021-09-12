@@ -27,7 +27,7 @@ body {
 }
 
 .row {
-    display: flex;
+  display: flex;
   color: black;
   justify-content: center;
 }
@@ -90,7 +90,8 @@ footer a {
       }
       .card{
         width: 200px;
-        display: block;
+        margin: 30px;
+        text-align: center;
     }
     .footer{
         position: relative;
