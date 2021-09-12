@@ -30,18 +30,18 @@ function showDate() {
   ];
 
   var monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
   ];
   document.getElementById("day").innerHTML =
     weekday[time.getDay()] +
@@ -52,7 +52,42 @@ function showDate() {
 }
 showDate();
 
+function showWeather() {}
 
+function showLocation() {
+  fetch("https://geoip-db.com/json/")
+    .then(
+      (resp) => resp.json() // this returns a promise
+    )
+    .then((repos) => {
+
+      let country = repos.country_name;
+      let postal = repos.postal;
+      document.getElementById("country").innerHTML = country +", "+ postal;
+    })
+    .catch((ex) => {
+      console.error(ex);
+    });
+}
+showLocation();
+
+/*
+*   La api free de clima se cayo y no encontre un reemplazo
+*
+*
+*/
 function showWeather(){
-    
+    let url = "https://goweather.herokuapp.com/weather/";
+    fetch(url)
+    .then(
+      (resp) => resp.json() 
+    )
+    .then((repos) => {
+
+      let country = repos.temperature;
+
+    })
+    .catch((ex) => {
+      console.error(ex);
+    });
 }

@@ -5,8 +5,12 @@ body {
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 64, 121, 1) 25%,
-    rgba(0, 212, 255, 1) 100%
+    rgba(0, 212, 255, 1) 100%      
   );
+
+  background-image: url("https://media.giphy.com/media/3oKIPy2jIv7yK1v7iM/giphy.gif"); 
+  background-position: center 25%; 
+  background-size: cover; 
 }
 .banner {
   margin-top: 100px;
@@ -39,9 +43,14 @@ body {
 .card:hover {
     cursor: pointer;
   transform: scale(1.1);
+  opacity: .5;
+  background-color: rgb(0, 0, 0);
+  color: rgba(201, 103, 103, 0.986);
 }
-.card:first-child{
-    background-color: bisque;
+.card{
+  color: aliceblue;
+  background-color:transparent;
+
 }
 .wi{
     font-size: 300%;
@@ -57,7 +66,11 @@ margin-top: 100px;
   color: white;
   text-align: center;
 }
-
+footer a {
+  text-decoration: none;
+  color: wheat;
+  font-size: medium;
+}
  
 @media (max-width: 991.98px){ 
     .banner .clock-time {
