@@ -6,12 +6,13 @@ https://yeikol2703.github.io/weatherApp/
 
 project in process
 
+![image](https://user-images.githubusercontent.com/58798908/133008160-c90012fc-666d-4f1f-9296-c4ddb2ebf34f.png)
 
-![image](https://user-images.githubusercontent.com/58798908/133008095-4855c1c5-a2e1-48fd-89d9-936a741f8b72.png)
 
 Responsive design
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/58798908/133008243-e92b5584-2e22-4fa8-86ee-b0cae5ee1d55.png)
+
 
 
 
